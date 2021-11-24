@@ -1,0 +1,183 @@
+import java.util.Scanner;
+
+
+public class Band {
+
+    public static void main(String[] args) {
+
+	
+
+	
+	
+	
+	
+	
+        String prop_one;
+	String prop_two;
+	String wood_one;
+	String clari;
+	String brass_one;
+	String brass_two;
+	String perc_one;
+	String perc_two;
+	
+	
+	int i = 0;
+
+	 Scanner scan = new Scanner(System.in);
+	
+		int next;
+		next = scan.nextInt();
+	
+	
+	    while( i < 2) {
+	
+	    if(next == 1) {
+	   System.out.println(" 1. Enter 1 for a prop1.");
+	   prop_one = scan.nextLine();
+	   prop_one = Instruments.prop_1();
+	  
+            
+	    }
+	  
+	    else if(next == 2) {
+	System.out.println(" 2. Enter 2 for a prop2.");
+	prop_two = scan.nextLine();
+	prop_two = Instruments.prop_2();
+	
+	 
+	    }
+	
+	    else if(next == 3) {
+	System.out.println("3. Enter 3 for a woowdwind instrument 1.");
+	wood_one = scan.nextLine();
+	wood_one = Instruments.Flute_1();
+
+	    }
+	    
+	    else if (next == 4) {
+	
+	System.out.println("4. Enter 4 for a woowdwind instrument 2.");
+	clari = scan.nextLine();
+	clari = Instruments.clar();
+	
+	 
+	
+	
+	    }
+	    
+	    else if (next == 5) {
+	System.out.println("5. Enter 5 for a brass instrument 1.");
+	brass_one = scan.nextLine();
+	brass_one = Instruments.percussion();
+	
+	
+	
+	
+	    }
+	
+	    else if (next == 6) {
+	System.out.println("6. Enter 6 for a brass instrument 2.");
+	brass_two = scan.nextLine();
+	brass_two = Instruments.trump();
+	
+	
+	    }
+	    else if (next == 7) {
+	
+	System.out.println("7. Enter 7 for a percussion instrument 1.");
+	perc_one = scan.nextLine();
+	perc_one = Instruments.tamb();
+	
+	
+	
+	    }
+	    
+	    else if(next == 8) {
+	    
+	System.out.println("8. Enter 8 for a percussion instrument 2.");
+	perc_two = scan.nextLine();
+	perc_two = Instruments.drum();
+	scan.close();
+	
+	}
+	
+	    else {
+		System.out.println("Please enter a valid number");
+		
+	    
+	    }
+	    
+    }
+	
+
+    }
+ static class Instruments{
+    
+  static  String prop1;
+  static  String prop2;
+  static String Flute;
+  static   String clarinet;
+   static  String drums;
+    static String trumpet;
+    static String xylo;
+    static String bongo;
+   
+  static    Scanner myObj = new Scanner(System.in);
+    
+    static String prop_1() {
+	System.out.println(" First prop is a baton that swings!.");
+	prop1 = myObj.nextLine();
+	return prop1;
+    }
+    
+     static String prop_2() {
+	System.out.println(" Second prop is a whistle that blows!.");
+	prop2 = myObj.nextLine();
+	return prop2;
+    }
+    
+     static String Flute_1() {
+	System.out.println("The first woodwind instrument is a flute that has an airy and light sound.");
+	Flute = myObj.nextLine();
+	return Flute;
+    }
+    
+   static   String clar() {
+	System.out.println("The second woodwind instrument is a clarinet that plays softly.");
+	clarinet = myObj.nextLine();
+	return clarinet;  
+ 
+  }
+    
+   static  String percussion() {
+	System.out.println("The first brass instrument is the drums that make a boom sound.");
+	drums = myObj.nextLine();
+	return drums;
+    }
+   
+   static   String trump() {
+	System.out.println("The second brass instrument is the trumpet it's sound is similar to a loud horn.");
+	trumpet = myObj.nextLine();
+	return trumpet;
+    }
+    
+   static   String tamb() {
+	System.out.println("The first percussion instrument is xylophone, makes a light 'ding' sound");
+	xylo = myObj.nextLine();
+	return xylo;
+    }
+    
+    
+   static  String drum() {
+	System.out.println("The second percussion instrument is the bongo drums, it makes the sound 'bum, bum!'");
+	bongo = myObj.nextLine();
+	return bongo;
+    }
+    
+ 
+}
+}
+
+ 
+ 
